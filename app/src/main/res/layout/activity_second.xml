@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/stoke"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="THANKS FOR RESISTRATION "
+        android:textStyle="italic"
+        android:textColor="#ffff00"
+        android:layout_marginHorizontal="20dp"
+        android:textSize="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"/>
+
+</LinearLayout>
+</layout>
