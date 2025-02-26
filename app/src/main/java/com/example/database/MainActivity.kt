@@ -1,4 +1,4 @@
-package com.example.screenchange
+package com.example.database
 
 import android.content.Intent
 import android.os.Bundle
@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         with(binding){
             binding.resBtn.setOnClickListener {
                 val intent = Intent(this@MainActivity, SecondActivity::class.java)
+                intent.putExtra("key", "value")
                 startActivity(intent)
             }
         }

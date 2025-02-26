@@ -19,6 +19,11 @@ class SecondActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_second)
+           binding = DataBindingUtil.setContentView(this, R.layout.activity_second)
+        val receivedData = intent.getStringExtra("key")
+        if (receivedData != null) {
+           binding.textView.text = receivedData
+        }
+        }
     }
-}
+
